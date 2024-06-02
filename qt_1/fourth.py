@@ -38,7 +38,7 @@ class MainWindow(QMainWindow):
         layout1.addWidget(self.button)
 
         self.orderInfo = QPlainTextEdit()
-        self.orderInfo.setDisabled(True)
+        self.orderInfo.setReadOnly(True)
         layout1.addWidget(self.orderInfo)
 
 
@@ -47,6 +47,7 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(widget)
 
     def clicked(self):
+        self.orderInfo.clear()
         if self.checkbox1.isEnabled():
             self.orderInfo.insertPlainText("Чизбургер \n")
         if self.checkbox2.isEnabled():

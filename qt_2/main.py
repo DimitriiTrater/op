@@ -87,7 +87,7 @@ class App(QWidget):
             _in = branch[f"{currency}_in"]
             _out = branch[f"{currency}_out"]
             if _in != "0.0000":
-                text += f"{currency}\nПокупка: {_in}\nПродажа: {_out}\n\n"
+                text += f"<b>{currency}</b><br>Покупка: {_in}<br>Продажа: {_out}<br>\n"
         self.currencies.setText(text)
 
 
