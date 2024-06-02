@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+    <link rel="icon" type="image/x-icon"
+          href="{{ url_for('static', filename='img/favicon.png') }}">
+</head>
+<body>
+{% from "_helpers.html" import render_field %}
+<form action="/edit-user/{{ user_id }}" method="post" enctype="multipart/form-data">
+    <dl>
+        {{ render_field(f.user_first_name) }}
+        {{ render_field(f.user_last_name) }}
+        {{ render_field(f.user_username) }}
+        {{ render_field(f.user_password) }}
+        {{ render_field(f.confirm) }}
+    </dl>
+	<input type="submit" value="Подтвердить"> <input type="reset" value="Очистить форму">
+</form>
+    
+</body>
+</html>

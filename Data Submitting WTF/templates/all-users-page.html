@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    <a href="/add-user">Добавить нового пользователя</a> <br />
+{% for user in users %}
+    <div>
+        <h3>
+            {{ user.username }}
+        </h3>
+        <p> {{ user.first_name }} {{ user.last_name }} </p>
+        <p>
+            <a href="/edit-user/{{ user.id }}">Изменить</a>
+            <a href="/delete-user/{{ user.id }}">Удалить</a>
+        </p>
+    </div>
+{% endfor %}
+    
+</body>
+</html>
