@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Опрос</title>
+</head>
+<body>
+<h1>Что вы думаете о творчестве FromSoftware?</h1>
+
+<form action="/results" method="post">
+<fieldset>
+    <legend>Вам нравится DS?</legend>
+
+    <input type="radio" id="ds-1" name="ds" value="yes" checked>
+    <label for="ds-1">Да</label>
+    <br/>
+
+    <input type="radio" id="ds-2" name="ds" value="no">
+    <label for="ds-2">Нет</label>
+    <br/>
+
+    <input type="radio" id="ds-3" name="ds" value="notsure">
+    <label for="ds-3">Не знаю</label>
+</fieldset>
+<br/>
+
+<fieldset>
+    <legend>Вам нравится Armored Core?</legend>
+
+    <input type="radio" id="ac-1" name="ac" value="yes" checked>
+    <label for="ac-1">Да</label>
+    <br/>
+
+    <input type="radio" id="ac-2" name="ac" value="no">
+    <label for="ac-2">Нет</label>
+    <br/>
+
+    <input type="radio" id="ac-3" name="ac" value="notsure">
+    <label for="ac-3">Не знаю</label>
+</fieldset>
+
+<fieldset>
+    <legend>Вам нравятся отравляющие болота?</legend>
+
+    <input type="radio" id="bl-1" name="bl" value="yes" checked>
+    <label for="bl-1">Да</label>
+    <br/>
+
+    <input type="radio" id="bl-2" name="bl" value="no">
+    <label for="bl-2">Нет</label>
+    <br/>
+
+    <input type="radio" id="bl-3" name="bl" value="notsure">
+    <label for="bl-3">Не знаю</label>
+</fieldset>
+<br/>
+
+<input type="submit" value="Отправить">
+</form>
+</body>
+</html>

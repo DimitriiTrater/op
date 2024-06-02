@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты</title>
+</head>
+<body>
+<h1>Результаты опроса</h1>
+
+<fieldset>
+    <table>
+    <legend><b>Вам нравится DS?</b></legend>
+    <tr>
+        <td>Да:</td>
+        <td>{{ answers['ds']['yes'] }}</td>
+    </tr>
+    <tr>
+        <td>Нет:</td>
+        <td>{{ answers['ds']['no'] }}</td>
+    </tr>
+    <tr>
+        <td>Не знаю:</td>
+        <td>{{ answers['ds']['notsure'] }}</td>
+    </tr>
+    </table>
+</fieldset>
+<br/>
+
+<fieldset>
+    <table>
+    <legend><b>Вам нравится Armored Core?</b></legend>
+    <tr>
+        <td>Да:</td>
+        <td>{{ answers['ac']['yes'] }}</td>
+    </tr>
+    <tr>
+        <td>Нет:</td>
+        <td>{{ answers['ac']['no'] }}</td>
+    </tr>
+    <tr>
+        <td>Не знаю:</td>
+        <td>{{ answers['ac']['notsure'] }}</td>
+    </tr>
+    </table>
+</fieldset>
+
+<fieldset>
+    <table>
+    <legend><b>Вам нравятся отравляющие болота?</b></legend>
+    <tr>
+        <td>Да:</td>
+        <td>{{ answers['bl']['yes'] }}</td>
+    </tr>
+    <tr>
+        <td>Нет:</td>
+        <td>{{ answers['bl']['no'] }}</td>
+    </tr>
+    <tr>
+        <td>Не знаю:</td>
+        <td>{{ answers['bl']['notsure'] }}</td>
+    </tr>
+    </table>
+</fieldset>
+</body>
+</html>
